@@ -21,10 +21,24 @@
             background-color: #2874F0;
         }
         .k_text_fixed{
-          margin-top: -8px;
+          margin-top: -6px;
           margin-right:5px !important;
           padding: 0px;
+          font-size: 0.7em;
         }
+        .plus{
+          width: 10px;
+          height: 10px;
+          margin-top: 2px;
+        }/* 
+        .k_position{
+          position: relative;
+        }
+        .k_search{
+          position: absolute;
+          top:60px;
+          left: 10px;
+        } */
         .k_headerbottom{
             margin-top: 57px;
             height: 113px;
@@ -94,9 +108,10 @@
 
                   <ul class="nav float-start d-md-none">
                     <li class="nav-item">
-                      <a class="nav-link fs-4 text mt-2" href="#" style="background:url('img/flipkart.png') 0px 0px/contain no-repeat; margin-right:-50px"></a>
-                      <a class="nav-link fs-6 text fst-italic k_text_fixed" href="#" contenteditable="" style="color: white;">Explore
-                        <span class="fs-6 text fst-italic k_text_fixed" style="color: #ffe500;">plus</span>
+                      <a class="nav-link fs-4 mt-2" href="#" style="background:url('img/flipkart.png') 0px 0px/contain no-repeat; margin-right:-50px"></a>
+                      <a class="nav-link text fst-italic k_text_fixed" href="#" contenteditable="" style="color: white;">Explore
+                        <span class="fst-italic k_text_fixed" style="color: #ffe500;">plus</span>
+                        <img src="img/plus.png" class="plus">
                       </a>
                     </li>
                   </ul>  
@@ -119,7 +134,8 @@
                    <div class="col-12 col-sm-12 col col-md-5">
                     <form>
                       <div class="mb-3">
-                        <input type="text" name="search" class="form-control rounded" id="search">
+                        <input type="text" name="search" class="form-control rounded k_position" id="search" placeholder="Search for Products, Brands and More">
+                        <!-- <i class="fas fa-search" class="k_search"></i> -->
                       </div>
                       <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
                     </form>
